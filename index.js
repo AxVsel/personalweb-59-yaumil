@@ -25,6 +25,8 @@ const { formatDateToWIB, getRelativeTime } = require("./utils/time");
 const { truncateText } = require("./utils/text");
 const { sendAlert, showSaveDialog } = require("./utils/alert");
 
+const config = require("./config/config");
+
 // const { disableUncheckedCheckbox } = require("./assets/js/test");
 
 const app = express();
