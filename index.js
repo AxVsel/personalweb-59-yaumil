@@ -26,7 +26,7 @@ const { truncateText } = require("./utils/text");
 const { sendAlert, showSaveDialog } = require("./utils/alert");
 
 // const { disableUncheckedCheckbox } = require("./assets/js/test");
-const config = require("./config/config");
+
 const app = express();
 require("dotenv").config();
 const upload = require("./middlewares/upload-file");
