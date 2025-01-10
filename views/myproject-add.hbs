@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Project Add</title>
+  <link rel="stylesheet" href="./assets/css/myproject.css" />
+
+</head>
+
+<body>
+  {{#> layout title="MyProject" user=user}}
+
+  <main>
+    <form action="/myproject" method="post" id="contactForm" enctype="multipart/form-data" class="contact-form">
+      <h1>ADD MY PROJECT</h1>
+      <div class="form-field">
+        <label for="projectname">Project Name</label>
+        <input id="projectname" name="projectname" class="form-input" type="text" placeholder="Project Name" required />
+      </div>
+
+      <div class="date-column">
+        <div class="form-field-date1">
+          <label for="startdate">Start Date</label>
+          <input id="startdate" name="startdate" class="form-input-date" type="date" placeholder="email" required />
+        </div>
+
+        <div class="form-field-date2">
+          <label for="enddate">End Date</label>
+          <input id="enddate" name="enddate" class="form-input-date" type="date" placeholder="email" required />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label class="message-contact" for="description">Description</label>
+        <textarea id="description" name="description" class="form-input" rows="6" required></textarea>
+      </div>
+
+      <div class="form-checkbox">
+        <label for="technologies">Tecnologies</label>
+        <div class="form-field-checkbox1">
+          <input type="checkbox" id="technologiesA" name="technologiesA"
+            value="http://localhost:2002/assets/img/node.png" class="form-input-checkbox" />
+          <span class="checkboxlabel" for="technologiesA">Node JS</span>
+          <input type="checkbox" id="technologiesB" name="technologiesB"
+            value="http://localhost:2002/assets/img/react.png" class="form-input-checkbox" />
+          <span class="checkboxlabel" for="technologiesB">React JS</span>
+        </div>
+        <div class="form-field-checkbox2">
+          <input type="checkbox" id="technologiesC" name="technologiesC"
+            value="http://localhost:2002/assets/img/next.png" class="form-input-checkbox" />
+          <span class="checkboxlabel" for="technologiesC">Next JS</span>
+          <input type="checkbox" id="technologiesD" name="technologiesD"
+            value="http://localhost:2002/assets/img/typescript.png" class="form-input-checkbox" />
+          <span class="checkboxlabel" for="technologiesD">Typescript</span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="input-blog-image" class="form-label">Upload Image</label>
+        <input id="image" name="image" class="form-input" type="file" placeholder="title" />
+      </div>
+      <div class="">
+        <input id="preview" name="preview" src="http://localhost:2002/assets/img/977157.png" style="display: none;"  class="form-input" type="file" placeholder="title" />
+      </div>
+      <div class="btn-right">
+        <button type="submit" class="form-submit-button">Submit</button>
+      </div>
+    </form>
+  </main>
+  <script src="/assets/js/image-preview.js"></script>
+  {{/layout}}
+
+</body>
+
+</html>

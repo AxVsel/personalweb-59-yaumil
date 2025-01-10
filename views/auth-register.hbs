@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="./assets/css/login-register.css" />
+</head>
+
+<body>
+  {{#> layout title="Register"}}
+  <main>
+    <form action="/register" method="post">
+      <div class="container">
+        <h1>Register</h1>
+        <div class="form-field">
+          <label for="username">Username</label>
+          <input id="username" name="username" class="form-input" type="text" placeholder="Username" required />
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" class="form-input" type="email" placeholder="example@gmail.com" required />
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input id="password" name="password" class="form-input" type="password" placeholder="Type your password" required />
+        </div>
+
+        {{#if messages.error}}
+        <div class="form-field2">
+          {{messages.error}}
+        </div>
+        {{/if}}
+        
+        <div class="btn-right">
+          <button type="submit" class="form-submit-button">Register</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {{/layout}}
+
+</body>
+
+</html>

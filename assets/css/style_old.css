@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  font-family: sans-serif;
+}
+body {
+  background-color: #bdc3c7;
+}
+
+/* card */
+
+.web {
+  height: 80vh;
+  width: 68%;
+  background-color: #ecf0f1;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px 5px #2c3e50;
+  padding: 10px;
+}
+
+.web > .container {
+  height: 90%;
+  width: 90%;
+  /* background-color: #00eb5a; */
+  box-sizing: border-box;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.web > .container > .box1 {
+  height: 80%;
+  width: 30%;
+  /* background-color: #eb5e00; */
+  float: right;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 5px 5px 5px 5px #2c3e50;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+.web > .container > .box1 > .imageprofile {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  background-color: #0011ff;
+  background-image: url("../assets/DSCF0096_KALIKI\ STUDIO\ edit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+  transition-duration: 0.8s;
+  filter: blur(10px);
+}
+
+.web > .container > .box1 > .imageprofile:hover {
+  filter: blur(0px);
+}
+
+.web > .container > .box1 > .infoprofile {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  background-color: #ecf0f1;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.web > .container > .box1 > .infoprofile > p {
+  font-size: 19px;
+  padding: 32px 70px;
+}
+
+.web > .container > .box2 {
+  height: 60%;
+  width: 60%;
+  /* background-color: #ff0000; */
+  float: left;
+}
+.web > .container > .box2 > h1 {
+  margin-top: 64px;
+}
+.web > .container > .box2 > p {
+  text-align: justify;
+  margin-top: 15px;
+  font-size: large;
+}
+.web > .container > .box3 {
+  height: 20%;
+  width: 60%;
+  /* background-color: #7002ff; */
+  float: left;
+}
+
+.web > .container > .box3 > .containerdownload {
+  height: 20%;
+  width: 100%;
+  margin-top: 7%;
+  /* background-color: #ffe600; */
+  position: relative;
+}
+
+.web > .container > .box3 > .containerdownload > .buttoncontact {
+  font-size: large;
+  color: #ecf0f1;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.web > .container > .box3 > .containerdownload > .buttoncontact:hover {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  border: 1px solid #2c3e50;
+}
+
+.web > .container > .box3 > .containerdownload > a {
+  padding: 18px 19px;
+  text-decoration: none;
+  color: #3c486b;
+  font-size: large;
+}
+.web > .container > .box3 > .containerdownload > .downloadicon {
+  height: 30px;
+  width: 30px;
+  /* background-color: #113000; */
+  background-image: url("../assets/download-solid.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 66%;
+}
+
+.web > .container > .box4 {
+  height: 20%;
+  width: 60%;
+  /* background-color: #5eff00; */
+  float: left;
+}
+
+.web > .container > .box4 > .logo {
+  position: relative;
+  height: 20%;
+  width: 100%;
+  margin-top: 8%;
+  /* background-color: #ffe600; */
+}
+
+.web > .container > .box4 > .logo > .logo1 {
+  background-image: url("../assets/linked_icon-icons.com_66685.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 60px;
+  padding: 30px 40px;
+  /* margin-left: 5px; */
+}
+
+.web > .container > .box4 > .logo > .logo2 {
+  background-image: url("../assets/3721672-instagram_108066.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 60px;
+  padding: 30px 40px;
+  margin-left: 5px;
+}
+
+.web > .container > .box4 > .logo > .logo3 {
+  background-image: url("../assets/github_git_icon_145985.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 60px;
+  padding: 30px 40px;
+  margin-left: 5px;
+}

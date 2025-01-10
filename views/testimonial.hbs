@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="/assets/css/testimonial.css" />
+
+</head>
+
+<body>
+    {{#> layout title="Testimonial" user=user}}
+
+    <h1 class="title">Testimonial</h1>
+    <h2 class="ratting">Ratting By Start</h2>
+    <div class="button-group">
+        <button type="button" onclick="showAllTestimonials()"> All</button>
+        <button type="button" onclick="filterTestimonialByStar(1)"> 1✯</button>
+        <button type="button" onclick="filterTestimonialByStar(2)"> 2✯</button>
+        <button type="button" onclick="filterTestimonialByStar(3)"> 3✯</button>
+        <button type="button" onclick="filterTestimonialByStar(4)"> 4✯</button>
+        <button type="button" onclick="filterTestimonialByStar(5)"> 5✯</button>
+    </div>
+
+    <div id="testimonialsContainer" class="card-container">
+
+
+
+    </div>
+
+
+    {{/layout}}
+
+</body>
+<script src="/assets/js/testimonial.js"></script>
+
+</html>

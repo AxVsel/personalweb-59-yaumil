@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #dfe6e9;
+}
+
+.web {
+  /* height: 100%; */
+  /* width: 100%; */
+  background-color: #dfe6e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.web-success {
+  height: 40px;
+  width: 100%;
+  background-color: #44bd32;
+  color: #f5f6fa;
+  font-size: 1.5vw;
+}
+
+.web > .container {
+  height: 70vh;
+  width: 60%;
+  background-color: #f1f2f6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px #747d8c;
+  padding: 50px 100px;
+  margin-top: 55px;
+}
+
+.web > .container > .picturebio {
+  height: 100%;
+  width: 35%;
+  background-color: #ced6e0;
+  float: right;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #747d8c;
+}
+
+.web > .container > .picturebio > .picture-img {
+  height: 80%;
+  width: 100%;
+  /* background-color: rgb(25, 0, 255); */
+}
+.web > .container > .picturebio > .picture-img > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.web > .container > .picturebio > .picture-info {
+  height: 20%;
+  width: 100%;
+  /* background-color: rgb(30, 255, 0); */
+  text-align: center;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+  color: #2f3542;
+}
+
+.web > .container > .infobio {
+  height: 60%;
+  width: 62%;
+  /* background-color: red; */
+  text-align: justify;
+  font-size: 1.2vw;
+  color: #2f3542;
+}
+.web > .container > .downloadbio {
+  height: 15%;
+  width: 62%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.web > .container > .downloadbio > .download-contact > a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #2f3542;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.web > .container > .downloadbio > .download-cv > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2f3542;
+}
+
+.web > .container > .sosmedbio {
+  height: 25%;
+  width: 62%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

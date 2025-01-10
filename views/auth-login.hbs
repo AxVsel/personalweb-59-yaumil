@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/login-register.css" />
+</head>
+
+<body>
+    {{#> layout title="Login"}}
+    <main>
+        <form action="/login" method="post">
+            <div class="container">
+                <h1>Login</h1>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" class="form-input" type="email" placeholder="example@gmail.com"
+                        required />
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" class="form-input" type="password" placeholder="password"
+                        required />
+                </div>
+                {{#if messages.error}}
+                <div class="form-field2">
+                    {{messages.error}}
+                </div>
+                {{/if}}
+                {{#if messages.success}}
+                <div class="form-field3">
+                    {{messages.success}}
+                </div>
+                {{/if}}
+
+                <div class="btn-right">
+                    <button type="submit" class="form-submit-button">Login</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    {{/layout}}
+
+</body>
+
+</html>

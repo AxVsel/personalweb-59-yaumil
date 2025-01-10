@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Project</title>
+  <link rel="stylesheet" href="/assets/css/myproject.css" />
+</head>
+
+<body>
+  {{#> layout title="MyProject" user=user}}
+
+  <article>
+    <h1>MY PROJECT</h1>
+    <form action=""></form>
+    <div class="navbar-right">
+      {{#if user}}
+      <a href="/myproject-add" class="contact-link">Add New Project</a>
+      {{/if}}
+    </div>
+    <div class="card-container">
+      {{#each myprojects}}
+      <div class="card">
+        <div class="card-image">
+          <img src="{{this.image}}" alt="content-image" />
+        </div>
+        <div class="card-info">
+          <h2><a href="/myproject-detail/{{this.id}}">{{this.projectname}}</a></h2>
+          <p class="duration">Durasi :{{getRelativeTime this.createdAt}} | Author {{this.user.username}}</p>
+          <p class="info">
+            {{truncateText this.description}}
+          </p>
+        </div>
+        <div class="card-tech">
+          <img src="{{this.technologiesA}}" alt="" />
+          <img src="{{this.technologiesB}}" alt="" />
+          <img src="{{this.technologiesC}}" alt="" />
+          <img src="{{this.technologiesD}}" alt="" />
+        </div>
+
+        {{#if (equal ../user.id this.user_id)}}
+        <div class="card-button">
+          <div class="card-button-cover1">
+            <a href="/myproject-edit/{{this.id}}" type="" class="card-button-submit1">Edit</a>
+          </div>
+
+          <div class="card-button-cover2">
+            <form action="/myproject-delete/{{this.id}}" method="post" class="delete-form">
+              <button type="button" class="card-button-submit2 delete-btn">Delete</button>
+            </form>
+          </div>
+        </div>
+        {{/if}}
+
+      </div>
+      {{/each}}
+
+    </div>
+  </article>
+  {{/layout}}
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
+<script src="/assets/js/sweetalert.js"></script>
+
+</html>

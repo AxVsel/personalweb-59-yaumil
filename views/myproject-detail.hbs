@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyProject Detail</title>
+  <link rel="stylesheet" href="/assets/css/myproject-detail.css" />
+
+</head>
+
+<body>
+  {{#> layout title="MyProject"}}
+  <h1 class="projectName">{{data.projectname}}</h1>
+  <p class="author">Author ||  {{data.user.username}}</p>
+  <div class="imageProject">
+    <img src="{{data.image}}" alt="">
+  </div>
+  <div class="date">
+    <div class="startdate">Start Date : {{data.startdate}}</div>
+    <div class="enddate">End Date : {{data.enddate}}</div>
+  </div>
+  <div class="technologies">
+    <p>Technologies</p>
+    <div class="card-tech">
+      <img src="{{data.technologiesA}}" alt="" />
+      <img src="{{data.technologiesB}}" alt="" />
+      <img src="{{data.technologiesC}}" alt="" />
+      <img src="{{data.technologiesD}}" alt="" />
+    </div>
+  </div>
+  <div class="description">
+    <p>Description</p>
+    <div class="descriptionText">
+      <p>{{data.description}}</p>
+    </div>
+  </div>
+
+  {{/layout}}
+
+</body>
+
+</html>
